@@ -41,7 +41,7 @@
     }
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape) and (max-height: 575.98px) {
+@media screen and (max-width: 600px) {
     #contact, footer {
         height: 20vh;
     }
@@ -58,7 +58,7 @@
         width: 100%;
     }
     .contact-info-upper-container{
-        margin-bottom: 15rem;
+        margin-bottom: 12rem;
     }
     .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
         flex-wrap: wrap;
