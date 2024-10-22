@@ -54,10 +54,7 @@
     }
     footer nav {
         height: fit-content;
-        margin-bottom: 0;
-    }
-    footer{
-        height: 3rem;
+        margin-bottom: 5rem;
     }
     .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
         flex-wrap: wrap;
