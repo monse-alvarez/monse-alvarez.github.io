@@ -937,7 +937,7 @@ article {
     display: flex;
     justify-content: center;
     flex-direction: column; 
-    height: 60vh;
+    height: 80vh;
 }
 
 .contact-info-upper-container {
@@ -972,6 +972,7 @@ footer {
     justify-content:center;
     align-items: center;
     color: var(--secondary-color);
-    margin: 0 1rem;
+    margin: 0;
     overflow: hidden;
+    bottom: 0;
 }
