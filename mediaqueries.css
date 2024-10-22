@@ -52,7 +52,6 @@
     article {
         font-size: 1rem;
     }
- 
     .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
         flex-wrap: wrap;
     }
