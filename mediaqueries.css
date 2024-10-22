@@ -58,7 +58,7 @@
         width: 100%;
     }
     .contact-info-upper-container{
-        margin-bottom: 12rem;
+        margin-bottom: 10rem;
     }
     .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
         flex-wrap: wrap;
