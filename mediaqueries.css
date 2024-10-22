@@ -1,0 +1,151 @@
+@media screen and (max-width: 1400px) {
+    #profile {
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+    #skills, .experience-details-container {
+        margin-top: 2rem;
+    }
+    #profile, .section-container {
+        display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+    }
+    .about-containers {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #contact, footer {
+        height: 20vh;
+    }
+    #profile {
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article {
+        font-size: 1rem;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    footer{
+        height: 3rem;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
+        flex-wrap: wrap;
+    }
+    .contact-info-container {
+        margin: 0;
+        height: 2.5rem;
+    }
+    .contact-info-upper-container {
+        padding-left: 10%;
+        justify-content: left;
+    }
+    .contact-info-container p, .nav-links li a {
+        font-size: 1rem;
+    }
+    .experience-subtitle {
+        font-size: 1.25rem;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container {
+        height: 36vh;
+        padding-top: 0;
+        width: auto;
+        justify-content: center;
+    }
+    .section__text__p2 {
+        font-size: 1.25rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: justify;
+    }
+    .first-arrow {
+        top: 94%;
+        height: 6vh;
+    }
+    
+    .individual-project-container {
+        height: 685px;
+        width: auto;
+    }
+    .project-title-container {
+        margin: auto;
+        margin-top: 1rem;
+        width: 97%;
+    }
+    .project-details-container {
+        width: auto;
+        text-align: center;
+        margin: 1rem;
+        bottom: -1rem;
+        font-size: small;
+    }
+    .project-slider-container {
+        width: 100%;
+        margin: 1rem;
+    }
+    .slider-buttons {
+        opacity: 1;
+    }
+    .next-btn1, .next-btn2, .next-btn3 {
+        margin-left: 16.1rem;
+    }
+    .project-info {
+        margin-left: 4.5rem;
+    }
+    .about-containers{
+        display: flex;
+        justify-content: center;
+    }
+    .education-container{
+        margin-top: 2rem;
+    }
+    .slider-visibility{
+        margin-top: -19.75rem;
+        margin-left: 2.5rem;
+    }
+    .slider-visibility3{
+        margin-top: -19.75rem;
+        margin-left: 1.5rem;
+    }
+}

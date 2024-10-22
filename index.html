@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monserrat Alvarez</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Monserrat Alvarez</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#profile">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <btn id="darkmode">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                </btn>
+            </ul>
+        </div>
+    </nav>  
+    <nav id="hamburger-nav">
+        <div class="logo">Monserrat Alvarez</div>
+        <div class="hamburger-menu">
+            <btn id="darkmobile">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#e8eaed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+            </btn>
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="John Doe profile picture"/>
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Monserrat Alvarez</h1>
+            <p class="section__text__p2">B.S. Computer Engineering
+
+            </p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./assets/Monserrat Alvarez Resume 2024.pdf')"
+                >Download CV</button>
+                <button 
+                class="btn btn-color-1" onclick="location.href='./#contact'"
+                >Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <btn
+                class="linkedin-icon"
+                onclick="window.open('https://linkedin.com/in/monserrat-alvarez-84b1692a8', '_blank');">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>
+                </btn>    
+                <btn
+                class="github-icon"
+                onclick="window.open('https://github.com/monse-alvarez', '_blank');">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  fill="currentColor"><path d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z"></path></svg>
+                </btn>      
+            </div>
+        </div>
+        <btn
+        class="first-arrow"
+        onclick="location.href='./#about'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.0858L7.20712 5.29291L5.79291 6.70712L12 12.9142L18.2071 6.70712L16.7929 5.29291L12 10.0858ZM18 17L6.00001 17L6.00001 15L18 15V17Z"></path></svg>
+        </btn> 
+    </section>
+    <section id="about">
+        <p class="section__text__p3">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+                <!-- <div class="section__pic-container">
+                <img src="./assets/hardware-pic.png" 
+                alt="Profile picture"
+                class="about-pic"
+                />
+            </div> -->
+            <div class="about-details-container"> 
+                <div class="about-containers">
+                    <!-- <div class="education-container">
+                        <img src="./assets/experience.png" 
+                        alt="ence icon"
+                        class="noclickicon"
+                        />
+                        <h3 class="sub-text">Experience</h3>
+                        <p>3+ years <br />customer service</p>
+                    </div>
+                    -->
+                    <div class="education-container">
+                        <btn
+                        class="noclick-icons">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 0 9 12 16 22 10.1667V17.5H24V9L12 2ZM3.99902 13.4905V18.0001C5.82344 20.429 8.72812 22.0001 11.9998 22.0001 15.2714 22.0001 18.1761 20.429 20.0005 18.0001L20.0001 13.4913 12.0003 18.1579 3.99902 13.4905Z"></path></svg>
+                        </btn>  
+                        <h3 class="sub-text">Education</h3>
+                        <p>B.S Computer Engineering 
+                            <br />
+                            UC Davis, June 2024
+                        </p> 
+                    </div>
+                    <div class="coursework-container">
+                        <p>Coursework: Circuits, Digital Systems, Intro to Computer Architecture, Digital Electronic Circuits, Embedded Systems, Digital Signals & Systems, Computer Networks, Electronic Circuits, Power Electronics, Programming & Problem Solving, Object-Oriented Programming, Data Structures, Operating Systems & System Programming, Algorithm Design & Analysis
+                        </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="about-me">
+                        Hello, I am Monserrat! I've always had a strong interest in technology and enjoy learning how to fix things. This passion lead me to pursue a degree in computer engineering. I enjoy working with both hardware and software, and throughout my academic career, I have completed many projects. However, I cannot upload my code for those projects to Github, so I made this website to share demos and pictures of them. I also plan to work on personal projects, which I will add to my Github and website.
+                    </p>
+                    <br>
+                    <p class="about-me">
+                        In my free time, I like exploring new hobbies. I am currently into: gaming, crocheting, balisong flipping, speed cubing, and mechanical keyboards.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <btn
+        class="arrow"
+        onclick="location.href='./#projects'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.0858L7.20712 5.29291L5.79291 6.70712L12 12.9142L18.2071 6.70712L16.7929 5.29291L12 10.0858ZM18 17L6.00001 17L6.00001 15L18 15V17Z"></path></svg>
+        </btn> 
+    </section>
+    <section id="projects">
+        <p class="section__text__p3">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="project-section-container">
+            <div class="projects-containers">
+                <div class="individual-project-container">
+                    <div class="project-slider-container">
+                        <div class="first-project-img">
+                            <img src="./assets/website.png">
+                        </div>
+                    </div>                    
+                    <div class="project-title-container">
+                        <h2 class="project-title">
+                            Portfolio Website
+                        </h2>
+                    </div>
+                    <div class="project-details-container">
+                        <p class="project-details">
+                            You're on it right now! I made this website to show demos and pictures for some of my projects. Check out my resume if you want to read about my other projects! I had no prior experience with HTML or CSS, so I followed a tutorial. Afterwards, I changed some of the sections and implemented new features such as a dark mode and image sliders.
+                        </p>
+                        <btn
+                        class="projects-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            <p class="project-time">September 2024 - Present</p>
+                        </btn>
+                        <p class="project-tools">
+                            Used: HTML | CSS | JavaScript
+                        </p>
+                        <button 
+                        class="btn project-btn"
+                        onclick="window.open('https://github.com/monse-alvarez', '_blank');"
+                        >
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="individual-project-container">
+                    <div class="project-slider-container">
+                        <div class="project1-slide active">
+                            <div class="video">
+                                <video controls src="./assets/step_explanation.mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="project1-slide">
+                            <div class="video">
+                                <video controls src="./assets/Shoe Demo.mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="project1-slide">
+                            <img src="./assets/step_counter.png"/>
+                        </div>
+                        <div class="slider-buttons">
+                            <i class="fas fa-chevron-left prev-btn1"></i>
+                            <i class="fas fa-chevron-right next-btn1"></i>
+                        </div>
+                    </div> 
+                    <div class="slider-visibility">
+                        <div class="slide1-icon active" attr='0' onclick="switchImage1(this)"></div>
+                        <div class="slide1-icon"  attr='1' onclick="switchImage1(this)"></div>
+                        <div class="slide1-icon"  attr='2' onclick="switchImage1(this)"></div>
+                    </div>                   
+                    <div class="project-title-container">
+                        <h2 class="project-title">
+                            Step Counter
+                        </h2>
+                    </div>
+                    <div class="project-details-container">
+                        <p class="project-details">
+                            I worked with a team to create a step counter. We used a PSoC microcontroller and LIS3DH acceleromter to detect and calculate movement. For the PSoC and accelerometer to commuincate, we used I2C. To power all of the components, we used a battery connected to a buck boost converter to lower the voltage to 3.3V. The step count can be viewed on an app and once ten steps have been reached, a red light on the PSoC will turn on. 
+                        </p>
+                        <btn
+                        class="projects-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            <p class="project-time">November 2022</p>
+                        </btn>
+                        <p class="project-tools">
+                            Used: PSoC 6 | PSoC Creator | BLE | I2C | C
+                        </p>
+                    </div>
+                </div>
+                <div class="individual-project-container">
+                    <div class="project-slider-container">
+                        <div class="project2-slide active">
+                            <div class="video">
+                                <video controls src="./assets/sound_follower_demo.mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="project2-slide">
+                            <img src="./assets/sound_following_robot.jpg"/>
+                        </div>
+                        <div class="slider-buttons">
+                            <i class="fas fa-chevron-left prev-btn2"></i>
+                            <i class="fas fa-chevron-right next-btn2"></i>
+                        </div>
+                    </div> 
+                    <div class="slider-visibility">
+                        <div class="slide2-icon active" attr='0' onclick="switchImage2(this)"></div>
+                        <div class="slide2-icon" attr='1' onclick="switchImage2(this)"></div>
+                    </div>                   
+                    <div class="project-title-container">
+                        <h2 class="project-title">
+                            Sound Following Robot
+                        </h2>
+                    </div>
+                    <div class="project-details-container">
+                        <p class="project-details">
+                            I programmed a robot to move towards sound using a TI MSP432 microcontroller and robotics kit. I built a microphone amplifier circuit and to make sure that the magnitude of the output for both microphone circuits was the same when a sound was played at an equal distance, I used the oscilloscop on myDAQ. I also programmed digital filters to reduce noise, and used PWM to control the robot's motors. To determine which direction the robot should turn, I calculated the average max value of the microphones' output.
+                        </p>
+                        <btn
+                        class="projects-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            <p class="project-time">June 2021</p>
+                        </btn>
+                        <p class="project-tools">
+                            Used: TI-RSLK Max Kit | Code Composer Studio | C
+                        </p>
+                    </div>
+                </div>
+                <div class="individual-project-container">
+                    <div class="project-slider-container">
+                        <div class="project3-slide active">
+                            <img src="./assets/full_adder.png"/>
+                            <div class="project-info">
+                                <h2> Full Adder </h2>
+                            </div>
+                        </div>
+                        <div class="project3-slide">
+                            <img src="./assets/score_adder.png"/>
+                            <div class="project-info">
+                                <h2> Score Adder </h2>
+                            </div>
+                        </div>
+                        <div class="project3-slide">
+                            <img src="./assets/score_register.png"/>
+                            <div class="project-info">
+                                <h2> Score Register </h2>
+                            </div>
+                        </div>
+                        <div class="project3-slide">
+                            <img src="./assets/turn_counter.png"/>
+                            <div class="project-info">
+                                <h2> Turn Counter </h2>
+                            </div>
+                        </div>
+                        <div class="project3-slide">
+                            <img src="./assets/dice_roll.png"/>
+                            <div class="project-info">
+                                <h2> Dice Roll </h2>
+                            </div>
+                        </div>
+                        <div class="project3-slide">
+                            <img src="./assets/level_to_pulse.png"/>
+                            <div class="project-info">
+                                <h2> Level To Pulse </h2>
+                            </div>
+                        </div>
+                        <div class="slider-buttons">
+                            <i class="fas fa-chevron-left prev-btn3"></i>
+                            <i class="fas fa-chevron-right next-btn3"></i>
+                        </div>
+                    </div>    
+                    <div class="slider-visibility3">
+                        <div class="slide3-icon active" attr='0' onclick="switchImage3(this)"></div>
+                        <div class="slide3-icon" attr='1' onclick="switchImage3(this)"></div>
+                        <div class="slide3-icon" attr='2' onclick="switchImage3(this)"></div>
+                        <div class="slide3-icon" attr='3' onclick="switchImage3(this)"></div>
+                        <div class="slide3-icon" attr='4' onclick="switchImage3(this)"></div>
+                        <div class="slide3-icon" attr='5' onclick="switchImage3(this)"></div>
+                    </div>                
+                    <div class="project-title-container">
+                        <h2 class="project-title">
+                            FPGA Dice Game
+                        </h2>
+                    </div>
+                    <div class="project-details-container">
+                        <p class="project-details">
+                            I designed a dice game on the DE10 Lite FPGA board. The goal of the game is to get a score of 15. The player has to roll the dice by pressing a button and use the switches to either add the roll to their score or pass and roll again. I implemented the control logic of the game using the Mealy machine. I also, created K-maps for certain components like the 7 segment hex display which shows the decimal value of the player's score and the number they roll. Unfortunately, I did not record a demo.
+                        </p>
+                        <btn
+                        class="projects-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            <p class="project-time">June 2021</p>
+                        </btn>
+                        <p class="project-tools">
+                            Used: DE10 Lite | Quartus 
+                        </p>
+                    </div>
+                </div>
+                <div class="individual-project-container">
+                    <div class="project-slider-container">
+                        <div class="project4-slide active">
+                            <div class="video">
+                                <video controls muted src="./assets/light_robot_demo.mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="project4-slide">
+                            <img src="./assets/light_robot.jpg"/>
+                        </div>
+                        <div class="project4-slide">
+                            <img src="./assets/light_robot_solder.jpg"/>
+                        </div>
+                        <div class="slider-buttons">
+                            <i class="fas fa-chevron-left prev-btn4"></i>
+                            <i class="fas fa-chevron-right next-btn4"></i>
+                        </div>
+                    </div>    
+                    <div class="slider-visibility">
+                        <div class="slide4-icon active" attr='0' onclick="switchImage4(this)"></div>
+                        <div class="slide4-icon" attr='1' onclick="switchImage4(this)"></div>
+                        <div class="slide4-icon" attr='2' onclick="switchImage4(this)"></div>
+                    </div>                
+                    <div class="project-title-container">
+                        <h2 class="project-title">
+                            Light Following Robot
+                        </h2>
+                    </div>
+                    <div class="project-details-container">
+                        <p class="project-details">
+                            This project was a kit that my high school physics teacher supplied. The kit came with instructions, so I just soldered the components as directed. This was also my first time soldering and working with elctronic components. I really enjoyed building this project, and it solidified my interest in pursuing a computer engineering degree. This robot has two sensors and motors that turn on depending on which sensor detects light. It can also be recharged with a plug in power supply.
+                        </p>
+                        <btn
+                        class="projects-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            <p class="project-time">May 2019</p>
+                        </btn>
+                    </div>
+                </div>
+            </div>
+            <button 
+            class="btn bottom-btn"
+            onclick="window.open('https://github.com/monse-alvarez', '_blank');"
+            >
+                See More
+            </button>
+        </div>
+        <btn
+        class="arrow"
+        onclick="location.href='./#skills'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.0858L7.20712 5.29291L5.79291 6.70712L12 12.9142L18.2071 6.70712L16.7929 5.29291L12 10.0858ZM18 17L6.00001 17L6.00001 15L18 15V17Z"></path></svg>
+        </btn> 
+    </section>
+    <section id="skills">
+        <p class="section__text__p3">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="skills-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">C</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">MATLAB</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">C++</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">RISC-V</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">Python</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">Verilog</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technologies</h2>
+                    <div class="article-container">
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">OrCAD CIS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">LTSpice</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">Altium</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">Quartus</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">ModelSim</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <btn
+                            class="skills-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10.007 2.10377C8.60544 1.65006 7.08181 2.28116 6.41156 3.59306L5.60578 5.17023C5.51004 5.35763 5.35763 5.51004 5.17023 5.60578L3.59306 6.41156C2.28116 7.08181 1.65006 8.60544 2.10377 10.007L2.64923 11.692C2.71404 11.8922 2.71404 12.1078 2.64923 12.308L2.10377 13.993C1.65006 15.3946 2.28116 16.9182 3.59306 17.5885L5.17023 18.3942C5.35763 18.49 5.51004 18.6424 5.60578 18.8298L6.41156 20.407C7.08181 21.7189 8.60544 22.35 10.007 21.8963L11.692 21.3508C11.8922 21.286 12.1078 21.286 12.308 21.3508L13.993 21.8963C15.3946 22.35 16.9182 21.7189 17.5885 20.407L18.3942 18.8298C18.49 18.6424 18.6424 18.49 18.8298 18.3942L20.407 17.5885C21.7189 16.9182 22.35 15.3946 21.8963 13.993L21.3508 12.308C21.286 12.1078 21.286 11.8922 21.3508 11.692L21.8963 10.007C22.35 8.60544 21.7189 7.08181 20.407 6.41156L18.8298 5.60578C18.6424 5.51004 18.49 5.35763 18.3942 5.17023L17.5885 3.59306C16.9182 2.28116 15.3946 1.65006 13.993 2.10377L12.308 2.64923C12.1078 2.71403 11.8922 2.71404 11.692 2.64923L10.007 2.10377ZM6.75977 11.7573L8.17399 10.343L11.0024 13.1715L16.6593 7.51465L18.0735 8.92886L11.0024 15.9999L6.75977 11.7573Z"></path></svg>
+                            </btn>
+                            <div>
+                                <h3 class="sub-text">PuTTY</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <btn
+        class="arrow"
+        onclick="location.href='./#contact'">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 10.0858L7.20712 5.29291L5.79291 6.70712L12 12.9142L18.2071 6.70712L16.7929 5.29291L12 10.0858ZM18 17L6.00001 17L6.00001 15L18 15V17Z"></path></svg>
+        </btn> 
+    </section>
+    <section id="contact">
+        <p class="section__text__p3">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <btn
+                class="noclick-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#e8eaed"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                </btn> 
+                <p><a href="mailto:monserrat3a@gmail.com">monserrat3a@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <btn
+                class="noclick-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>
+                </btn> 
+                <p><a href="https://linkedin.com/in/monserrat-alvarez-84b1692a8" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
