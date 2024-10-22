@@ -972,6 +972,6 @@ footer {
     justify-content:center;
     align-items: center;
     color: var(--secondary-color);
-    margin: auto;
+    margin: 0 1rem;
     overflow: hidden;
 }
