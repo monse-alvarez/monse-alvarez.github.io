@@ -63,11 +63,7 @@
         flex-wrap: wrap;
     }
     #socials-container{
-        gap: 3.5rem;
-    }
-    .experience-details-container{
-        margin-bottom: -5rem;
-        overflow: auto;
+        gap: 5rem;
     }
     .contact-info-container {
         margin: 0;
@@ -76,6 +72,7 @@
     .contact-info-upper-container {
         padding-left: 10%;
         justify-content: left;
+        margin-bottom: 8rem;
     }
     .contact-info-container p, .nav-links li a {
         font-size: 1rem;
@@ -154,4 +151,5 @@
     .home-arrow svg{
         height: 7vh;
     }
+
 }
