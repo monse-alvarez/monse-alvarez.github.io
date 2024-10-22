@@ -52,10 +52,6 @@
     article {
         font-size: 1rem;
     }
-    footer nav {
-        margin-bottom: 2rem;
-        height: 10vh;
-    }
     .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
         flex-wrap: wrap;
     }
