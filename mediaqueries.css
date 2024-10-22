@@ -54,6 +54,7 @@
     }
     .footer{
         margin-top: 70px;
+        height: auto;
     }
     .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
         flex-wrap: wrap;
