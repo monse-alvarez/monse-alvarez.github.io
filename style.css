@@ -947,6 +947,7 @@ article {
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: var(--border-color);
     margin: 2rem auto;
+    margin-bottom: 7rem;
     padding: 0.5rem;
 }
 
