@@ -62,8 +62,12 @@
     .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
         flex-wrap: wrap;
     }
-    .section__text{
-        margin-top: -1.5rem;
+    #socials-container{
+        gap: 3.5rem;
+    }
+    .experience-details-container{
+        margin-bottom: -5rem;
+        overflow: auto;
     }
     .contact-info-container {
         margin: 0;
