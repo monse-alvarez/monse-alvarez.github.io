@@ -317,19 +317,19 @@ section {
     gap: 5rem;
 }
 
-.first-arrow svg {
+.home-arrow svg {
     fill: var(--secondary-color);
+    height: 4.5rem;
 }
 
-.first-arrow {
-    position: absolute; 
-    top: 85%;
+.home-arrow { 
+    display: flex;
+    position: absolute;
+    top: 90%;
     left: 50%;
     transform: translate(-50%,-50%);
-    display: flex;
     align-self: center;
     cursor: pointer;
-    height: 4rem;
     animation: bounce 0.5s cubic-bezier(0.8,0,1,1) infinite alternate;
 }
 

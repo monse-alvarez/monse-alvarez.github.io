@@ -6,6 +6,13 @@ function toggleMenu() {
     icon.classList.toggle("open")
 }
 
+
+/* ARROW */
+function HomeArrow() {
+    const arrow = document.querySelector(".links");
+    arrow.classList.toggle("open")
+}
+
 /* DARK MODE FOR DESKTOP */
 let darktheme = localStorage.getItem('darktheme')
 const themeswitch = document.getElementById('darkmode')
