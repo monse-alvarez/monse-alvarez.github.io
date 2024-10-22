@@ -101,7 +101,7 @@
     }
     .first-arrow {
         top: 94%;
-        height: 6vh;
+        width: 7vh;
     }
     
     .individual-project-container {
@@ -147,5 +147,9 @@
     .slider-visibility3{
         margin-top: -19.75rem;
         margin-left: 1.5rem;
+    }
+    footer{
+        margin-top: 2rem;
+        position: relative;
     }
 }

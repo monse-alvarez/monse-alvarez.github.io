@@ -278,5 +278,3 @@ function switchImage4(currentImage){
     }
     indicators4();
 }
-
-
