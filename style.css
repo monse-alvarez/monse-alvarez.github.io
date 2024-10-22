@@ -973,4 +973,5 @@ footer {
     align-items: center;
     color: var(--secondary-color);
     margin: auto;
+    overflow: hidden;
 }
