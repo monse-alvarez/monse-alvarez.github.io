@@ -52,6 +52,9 @@
     article {
         font-size: 1rem;
     }
+    .footer{
+        margin-top: 70px;
+    }
     .about-containers, .contact-info-upper-container, .btn-container, .projects-containers, .skills-containers {
         flex-wrap: wrap;
     }

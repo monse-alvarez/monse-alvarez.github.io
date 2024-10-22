@@ -44,7 +44,7 @@ theme_switch.addEventListener("click", () => {
 /* FOOTER */
 var year = new Date().getFullYear();
 var date = `Monserrat Alvarez ${year}`;
-document.getElementsByTagName('footer')[0].innerHTML = date;
+document.getElementsByClassName('footer')[0].innerHTML = date; 
 
 /* IMAGE SLIDER 1 */
 const images1 = document.querySelectorAll(".project1-slide");

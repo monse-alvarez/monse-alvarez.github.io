@@ -964,7 +964,7 @@ article {
 
 /* FOOTER SECTION */
 
-footer {
+.footer {
     display: flex;
     height: 10vh;
     width: 100%;
