@@ -696,26 +696,8 @@ video {
     border-radius: 2rem;
 }
 
-.slider-buttons {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
 .project-slider-container:hover .slider-buttons {
     opacity: 1;
-}
-
-.prev-btn1, .next-btn1, .prev-btn2, .next-btn2, .prev-btn3, 
-.next-btn3, .prev-btn4, .next-btn4 {
-    z-index: 999;
-    font-size: 1.5rem;
-    color: var(--img-arrow-color);
-    background: var(--img-arrow-bgnd-color);
-    cursor: pointer;
-    padding: 4px;
 }
 
 .prev-btn1, .prev-btn2, .prev-btn3, .prev-btn4 {
@@ -724,9 +706,28 @@ video {
 }
 
 .next-btn1, .next-btn2, .next-btn3, .next-btn4 {
- margin-left: 25.25rem;
- border-top-left-radius: 3px;
- border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+} 
+.slider-buttons {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 315px;
+    justify-content: space-between;
+    margin-right: 434px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.slider-buttons .pbtn{
+    z-index: 999;
+    font-size: 1.5rem;
+    color: var(--img-arrow-color);
+    background: var(--img-arrow-bgnd-color);
+    cursor: pointer;
+    padding: 4px;
 }
 
 .slider-visibility {
@@ -774,6 +775,7 @@ video {
     border-radius: 2rem;
     box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
     opacity: 0;
+    transition: opacity 0.5s ease;
 }
 
 .project-slider-container:hover .project-info {
