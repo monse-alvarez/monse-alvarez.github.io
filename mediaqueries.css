@@ -41,6 +41,7 @@
     }
 }
 
+/* MOBILE */
 @media screen and (max-width: 600px) {
     #contact, footer {
         height: 20vh;
@@ -151,5 +152,24 @@
     .home-arrow svg{
         height: 7vh;
     }
+    .project-info{
+        margin-left: 5rem;
+    }
+}
 
+/* LANDSCAPE */
+@media screen and (max-height: 575.98px) and (orientation: landscape){
+    .home-arrow{
+        display: none;
+    }
+    .individual-project-container{
+        margin-left: -5.5rem;
+    }
+    footer{
+        height: 12vh;
+        width: 900px;
+    }
+    #skills, #contact, #projects, #about{
+        margin-left: 5.5rem;
+    }
 }
