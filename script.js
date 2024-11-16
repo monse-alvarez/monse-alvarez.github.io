@@ -46,6 +46,65 @@ var year = new Date().getFullYear();
 var date = `Monserrat Alvarez ${year}`;
 document.getElementsByTagName('footer')[0].innerHTML = date; 
 
+/* IMAGE SLIDER 0 */
+const images0 = document.querySelectorAll(".project0-slide");
+const next0 = document.querySelector(".next-btn0");
+const prev0 = document.querySelector(".prev-btn0");
+const icons0 = document.querySelectorAll(".slide0-icon");
+var counter0 = 0;
+
+next0.addEventListener('click', slideNext0);
+function slideNext0(){
+    images0[counter0].style.animation = 'next1 0.5s ease-in forwards';
+    if(counter0 >= images0.length-1){
+        counter0 = 0;
+    }
+    else{
+        counter0++;
+    }
+    images0[counter0].style.animation = 'next2 0.5s ease-in forwards';
+    indicators0();
+}
+
+prev0.addEventListener('click', slidePrev0);
+function slidePrev0(){
+    images0[counter0].style.animation = 'prev1 0.5s ease-in forwards';
+    if(counter0 == 0){
+        counter0 = images0.length-1;
+    }
+    else{
+        counter0--;
+    }
+    images0[counter0].style.animation = 'prev2 0.5s ease-in forwards';
+    indicators0();
+}
+
+function indicators0(){
+    for(i = 0; i < icons0.length; i++){
+        icons0[i].className = icons0[i].className.replace(' active', '');
+    }
+    icons0[counter0].className += ' active';
+}
+
+function switchImage0(currentImage){
+    currentImage.classList.add('active');
+    var imageId = currentImage.getAttribute('attr');
+    if(imageId > counter0){
+    images0[counter0].style.animation = 'next1 0.5s ease-in forwards';
+    counter0 = imageId;
+    images0[counter0].style.animation = 'next2 0.5s ease-in forwards';
+    }
+    else if(imageId == counter0){
+        return;
+    }
+    else{
+    images0[counter0].style.animation = 'prev1 0.5s ease-in forwards';
+    counter0 = imageId;
+    images0[counter0].style.animation = 'prev2 0.5s ease-in forwards';	
+    }
+    indicators0();
+} 
+
 /* IMAGE SLIDER 1 */
 const images1 = document.querySelectorAll(".project1-slide");
 const next1 = document.querySelector(".next-btn1");

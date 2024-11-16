@@ -146,6 +146,55 @@
             <div class="projects-containers">
                 <div class="individual-project-container">
                     <div class="project-slider-container">
+                        <div class="project0-slide active">
+                            <div class="video">
+                                <video controls muted preload="auto" src="./assets/Video_Game_LEDs_Demo.mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="project0-slide">
+                            <img src="./assets/psoc_components.png"/>
+                        </div>
+                        <div class="project0-slide">
+                            <img src="./assets/psoc_pins.png"/>
+                        </div>
+                        <div class="slider-buttons">
+                            <i class="fas fa-chevron-left prev-btn0 pbtn"></i>
+                            <i class="fas fa-chevron-right next-btn0 pbtn"></i>
+                        </div>
+                    </div> 
+                    <div class="slider-visibility">
+                        <div class="slide0-icon active" attr='0' onclick="switchImage0(this)"></div>
+                        <div class="slide0-icon"  attr='1' onclick="switchImage0(this)"></div>
+                        <div class="slide0-icon"  attr='2' onclick="switchImage0(this)"></div>
+                    </div>                   
+                    <div class="project-title-container">
+                        <h2 class="project-title">
+                            Game Responsive LEDs
+                        </h2>
+                    </div>
+                    <div class="project-details-container">
+                        <p class="project-details">
+                            I made a python program to read a player's health in Terraria. The program sends the data to the PSoC6 over UART and turns on different LEDs based on the player's health. The PSoC also allows the user to use the AIROC app to control the LEDs. In the future I would like to implement an LED strip instead of using diodes.
+                        </p>
+                        <btn
+                        class="projects-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                            <p class="project-time">November 2024</p>
+                        </btn>
+                        <p class="project-tools">
+                            Used: PSoC 6 | BLE | Python | C | OpenCV| UART | FreeRTOS
+                        </p>
+                        <button 
+                        class="btn project-btn"
+                        onclick="window.open('https://github.com/monse-alvarez/Video-Game-Responsive-LEDs', '_blank');"
+                        >
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="individual-project-container">
+                    <div class="project-slider-container">
                         <div class="first-project-img">
                             <img src="./assets/website.png">
                         </div>
